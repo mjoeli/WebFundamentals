@@ -1,4 +1,146 @@
+@font-face {
+  font-family: 'EduSAHand';
+  src: url('../fonts/Edu_SA_Hand/EduSAHand-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Comic Neue';
+  src: url('../fonts/Comic_Neue/ComicNeue-Regular.ttf') format('truetype');
+}
+
+#page-wrapper {
+  max-width: 100vw;
+}
+
+@media (max-width: 768px) {
+  #header {
+    height: auto;
+    padding: 1rem;
+  }
+
+  #header h1 {
+    font-size: 1.5rem;
+  }
+
+  #main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #planets img {
+    width: 100% auto;
+    height: auto;
+  }
+}
+
+#header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url('../images/universe.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#header h1 {
+  color: rgb(203, 223, 240);
+  font-family: 'EduSAHand', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#body {
+  font-family: "Comic Neue", sans-serif;
+}
+
+#main-nav {
+  background-color: #042945;
+}
+
+#main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#main-nav ul li {
+  margin:0 10px;
+  font-family: 'EduSAHand';
+}
+
+#main-nav ul li a {
+  padding: 10px 25px;
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+}
+
+#main-nav ul li a:hover {
+  color: rgb(240, 200, 147);
+}
+
+#content-wrapper {
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: rgb(178, 192, 197);
+}
+
+#content-wrapper h2 {
+  font-family: 'Comic Neue';
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+}
+
+#planets img{
+  width: 300px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+#planets {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  border-collapse: collapse;
+  font-family: 'Comic Neue';
+}
+
+#planets th {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#planets td:first-child {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+#planets tr:not(:first-child):not(:nth-child(2)) td:not(:first-child):hover {
+  background-color: blanchedalmond;
+}
+
 td, th {
 	border: 1px solid;
+  font-family: 'Comic Neue';
   }
-  
+
+#footer {
+  text-align: center;
+  color: aliceblue;
+  background-color: #042945;
+  height: 40px;
+  clear: both;
+}

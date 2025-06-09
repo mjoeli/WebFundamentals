@@ -1,75 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>Your Title Here</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>My First CSS-Sytled Website</title>
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
-  <h1>Planetary Fact Sheet</h1>
-  <table id="planets">
-    <tr>
-      <th></th>
-      <th>Planet 1</th>
-      <th>Planet 2</th>
-      <th>Planet 3</th>
-      <th>Planet 4</th>
-    </tr>
-    <tr>
-      <td>Images of ??</td>
-      <td><img src="images/planet_1.png" alt="?"></td>
-      <td><img src="images/planet_2.png" alt="?"></td>
-      <td><img src="images/planet_3.png" alt="?"></td>
-      <td><img src="images/planet_4.png" alt="?"></td>
-    </tr>
-    <tr>
-      <td>Fact #1</td>
-      <td>???</td>
-      <td>???</td>
-      <td>???</td>
-      <td>???</td>
-    </tr>
-    <tr>
-      <td>Fact #2</td>
-      <td>???</td>
-      <td>???</td>
-      <td>???</td>
-      <td>???</td>
-    </tr>
-    <tr>
-      <td>Fact #3</td>
-      <td>???</td>
-      <td>???</td>
-      <td>???</td>
-      <td>???</td>
-    </tr>
-    <tr>
-      <td>Fact #4</td>
-      <td>???</td>
-      <td>???</td>
-      <td>???</td>
-      <td>???</td>
-    </tr>
-    <tr>
-      <td>Fact #5</td>
-      <td>???</td>
-      <td>???</td>
-      <td>???</td>
-      <td>???</td>
-    </tr>
-    <tr>
-      <td>Fact #6</td>
-      <td>???</td>
-      <td>???</td>
-      <td>???</td>
-      <td>???</td>
-    </tr>
-    <tr>
-      <td>Fact #7</td>
-      <td>???</td>
-      <td>???</td>
-      <td>???</td>
-      <td>???</td>
-    </tr>
-  </table>
+  <div id="page-wrapper">
+    <header id="header">
+      <h1 lang="en">Planetary Fun Facts: Explore the Wonders of Our Solar System</h1>
+    </header>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Earth">Earth</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Mars">Mars</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Saturn">Saturn</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Venus">Venus</a></li>
+      </ul>
+
+    </nav>
+    <main id="content-wrapper">
+      <h2>Table of Planetary Fact Sheet</h2>
+      <table id="planets">
+        <tr>
+          <th></th>
+          <th>Planet 1</th>
+          <th>Planet 2</th>
+          <th>Planet 3</th>
+          <th>Planet 4</th>
+        </tr>
+        <tr>
+          <td>Images</td>
+          <td><img src="images/earth.jpg" alt="Picture of planet earth"></td>
+          <td><img src="images/mars.jpg" alt="Picture of planet mars"></td>
+          <td><img src="images/saturn.jpg" alt="Picture of planet saturn"></td>
+          <td><img src="images/venus.jpg" alt="Picture of planet venus"></td>
+        </tr>
+        <tr>
+          <td>Fact #1</td>
+          <td>Earth is the only known planet with liguied water on its surface.</td>
+          <td>Mars is called the "red planet" due to iron oxide on its surface.</td>
+          <td>Saturn is famous for its stunning ring system made of ice and rock.</td>
+          <td>Venus is the hottest planet, with an average temperature of 450°C (869°F).</td>
+        </tr>
+        <tr>
+          <td>Fact #2</td>
+          <td>About 71% of Earth’s surface is covered by oceans.</td>
+          <td>Olympus Mons, the largest volcano in the Solar System, is on Mars.</td>
+          <td>It’s the second-largest planet in the Solar System.</td>
+          <td>It rotates backward — the Sun rises in the west!</td>
+        </tr>
+        <tr>
+          <td>Fact #3</td>
+          <td>The atmosphere is mostly nitrogen (78%) and oxygen (21%).</td>
+          <td>Mars has two small moons: Phobos and Deimos.</td>
+          <td>Saturn is a gas giant composed mostly of hydrogen and helium.</td>
+          <td>One day on Venus is longer than its year.</td>
+        </tr>
+        <tr>
+          <td>Fact #4</td>
+          <td>Earth has one natural satellite — the Moon.</td>
+          <td>Its seasons last twice as long as Earth’s.</td>
+          <td>A Saturn day lasts just about 10.7 hours.</td>
+          <td>Its atmosphere is 96% carbon dioxide — extreme greenhouse effect!</td>
+        </tr>
+        <tr>
+          <td>Fact #5</td>
+          <td>It is the densest planet in the Solar System.</td>
+          <td>There’s evidence of ancient water flows on Mars.</td>
+          <td>Its density is so low it would float in water.</td>
+          <td>Venus has no moons.</td>
+        </tr>
+        <tr>
+          <td>Fact #6</td>
+          <td>Earth’s magnetic field protects it from solar wind.</td>
+          <td>Temperatures can drop to –125°C (–195°F).</td>
+          <td>It has over 140 known moons (as of 2025).</td>
+          <td>Its thick clouds reflect sunlight, making it very bright in the sky.</td>
+        </tr>
+        <tr>
+          <td>Fact #7</td>
+          <td>A full rotation takes 23 hours, 56 minutes, and 4 seconds — not exactly 24 hours!</td>
+          <td>Its atmosphere is over 95% carbon dioxide</td>
+          <td>Titan, its largest moon, has lakes of liquid methane and a thick atmosphere.</td>
+          <td>There are signs of possible volcanic activity on Venus.</td>
+        </tr>
+      </table>
+    </main>
+    <footer id="footer">
+      <p>@ 2025 Planetary Fun Facts - All rights reserved.</p>
+    </footer>
+  </div>
 </body>
