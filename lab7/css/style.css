@@ -9,7 +9,10 @@
 }
 
 #page-wrapper {
-  max-width: 100vw;
+  max-width: 2000px;
+  margin: 0 auto; /* centers page*/
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
