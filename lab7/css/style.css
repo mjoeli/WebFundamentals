@@ -15,27 +15,6 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  #header {
-    height: auto;
-    padding: 1rem;
-  }
-
-  #header h1 {
-    font-size: 1.5rem;
-  }
-
-  #main-nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #planets img {
-    width: 100% auto;
-    height: auto;
-  }
-}
-
 #header {
   position: relative;
   top: 0;
@@ -109,7 +88,8 @@
   width: 300px;
   height: 200px;
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #planets {
